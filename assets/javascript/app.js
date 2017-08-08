@@ -6,9 +6,9 @@ $(document).ready(function(){
 
 		var sportVar = $(this).attr("data-name");
 		var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=b7c6a08723074e098dcafd64659b7c96&q=" + sportVar +"&limit=15&offset=0&rating=G&lang=en";
-
+		
 		$.ajax({
-			url: queryURL
+			url: queryURL,
 			method: "GET"
 		}).done(function(response){
 			console.log(response);
@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 	function createButtons() {
 
-		//$("#button-display").empty();
+		$("#button-display").empty();
 
 		for (var i = 0; i < sports.length; i++) {
 
