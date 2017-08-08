@@ -3,50 +3,52 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sports Gifs</title>
+	<!--ADD SHORTCUT ICON/FIX BACKGROUND-->
 	<link rel="shorcut icon" href="assets/images/#">
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 <body>
 
-	<div class="container">
-		<div class="row title">
-			<div class="col-sm-12">
-				<h1>Sports Gifs</h1>
-				<h4>Type in your favorite sport to add it to the list.</h4>
-			</div>
-		</div>
-	</div><!--title container-->
+			<div class="container">
+				<div class="row title">
+					<div class="col-sm-12">
+						<h1>Sports Gifs</h1>
+						<h4>Type in your favorite sport to add it to the list.</h4>
+					</div>
+				</div>
+			</div><!--title container-->
 
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12" id="button-display">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12" id="button-display">
 
-			</div>
-		</div>
-	</div><!--button div-->
+					</div>
+				</div>
+			</div><!--created buttons div-->
 
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-9" id="gif-display">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9" id="gif-display">
+					
+					</div><!--gifs go here-->
+					<div class="col-sm-3" id="gif-input">
+						<form id="sport-form">
+							<label for="sport-input">Add a Sport, Leauge, or Team </label>
+							<input type="text" id="sport-input">
+							<input type="submit" id="add-sport" value="Submit">
+						</form>
+					</div><!--user input form-->
+				</div>
+			</div><!--gif display and search input-->
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" scr="assets/javascript/app.js">
+
 			
-			</div><!--gifs go here-->
-			<div class="col-sm-3" id="gif-input">
-				<form id="sport-form">
-					<label for="sport-input">Add a Sport, Leauge, or Team </label>
-					<input type="text" id="sport-input">
-					<input type="submit" id="add-sport" value="Submit">
-				</form>
-			</div><!--user input form-->
-		</div>
-	</div><!--gif display and search input-->
-	
-<script type="text/javascript" scr="assets/javascript/app.js">
-	
-</script>
+		</script>
 
 </body>
 </html>
