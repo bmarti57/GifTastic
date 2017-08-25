@@ -16,10 +16,10 @@ $(document).ready(function(){
 			var results = response.data;
 			for (var m = 0; m < results.length; m++) {
 				var sportDiv = $("<div>");
-				var p = $("<p>").text("Rated: " + results[i].rating)
+				var p = $("<p>").text("Rated: " + results[m].rating)
 				var sportGif = $("<img>"); 
 
-				sportGif.attr("src", results[i].images.fixed_height.url);
+				sportGif.attr("src", results[m].images.fixed_height.url);
 				sportDiv.append(p);
 				sportDiv.append(sportGif);
 
@@ -40,7 +40,7 @@ $(document).ready(function(){
 			sb.attr("data-name", sports[i]);
 			sb.text(sports[i]);
 
-			$("button-display").append(sb);
+			$("#button-display").append(sb);
 		};
 
 	}; //create buttons
